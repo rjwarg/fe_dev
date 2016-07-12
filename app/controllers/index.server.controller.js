@@ -7,6 +7,7 @@ exports.render = function(req,res){
     req.session.lastVisit = new Date();
     
     res.render('index', {
-        title: 'Hello World V 0.4.1'
+        title: 'Hello World V 0.5.0',
+        userFullName: req.user ? req.user.fullName : ''
     });
 };
