@@ -8,6 +8,7 @@ exports.render = function(req,res){
     
     res.render('index', {
         title: 'Hello World V 0.5.0',
-        userFullName: req.user ? req.user.fullName : ''
+        userFullName: req.user ? req.user.fullName : '',
+        user: JSON.stringify(req.user)
     });
 };
