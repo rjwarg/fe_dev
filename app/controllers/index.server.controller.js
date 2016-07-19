@@ -1,3 +1,5 @@
+// file:index.server.controller.js
+
 exports.render = function(req,res){
    
     if(req.session.lastVisit){
